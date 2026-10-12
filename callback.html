@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Authorization Code - Ezra Creator Tools</title></head>
+<body>
+<h1>Your authorization code</h1>
+<p>Copy the code below and send it to finish connecting Ezra Creator Tools:</p>
+<p id="code" style="font-size:24px;font-weight:bold;word-break:break-all;">(no code found in this link)</p>
+<script>
+var m = new URLSearchParams(window.location.search).get("code");
+if (m) { document.getElementById("code").textContent = m; }
+</script>
+</body>
+</html>
