@@ -1,9 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><title>Ezra Creator Tools</title></head>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ezra Creator Tools — Publish Your Own Videos to Your Own TikTok</title>
+<meta name="description" content="Ezra Creator Tools is a personal publishing tool that lets a creator post his own original videos to his own TikTok account through TikTok's official Content Posting API.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+  :root { --ink:#1c1e21; --muted:#5b6168; --accent:#0b6bcb; --bg:#f7f8fa; --card:#ffffff; --line:#e3e6ea; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--bg); line-height:1.6; }
+  header.site { background:var(--card); border-bottom:1px solid var(--line); }
+  .wrap { max-width:880px; margin:0 auto; padding:0 20px; }
+  .brand { display:flex; align-items:center; gap:14px; padding:18px 0; }
+  .brand img { width:52px; height:52px; border-radius:12px; }
+  .brand .name { font-size:22px; font-weight:700; }
+  .brand .tag { color:var(--muted); font-size:14px; }
+  .hero { padding:44px 0 10px; }
+  .hero h1 { font-size:32px; line-height:1.25; margin:0 0 14px; }
+  .hero p { font-size:17px; color:#33383e; max-width:720px; }
+  section { padding:26px 0 6px; }
+  h2 { font-size:21px; margin:0 0 12px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+  .card h3 { margin:0 0 6px; font-size:16px; }
+  .card p { margin:0; color:#3c4249; font-size:15px; }
+  ol.steps li, ul.plain li { margin-bottom:8px; }
+  footer.site { margin-top:44px; background:var(--card); border-top:1px solid var(--line); }
+  .foot { padding:22px 0 30px; color:var(--muted); font-size:14px; }
+  .foot nav a { margin-right:18px; }
+  a { color:var(--accent); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+</style>
+</head>
 <body>
-<h1>Ezra Creator Tools</h1>
-<p>A personal tool used by Guangyi Zhao to publish his own original videos to his own TikTok account.</p>
-<p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+<header class="site">
+  <div class="wrap brand">
+    <img src="app-icon.png" alt="Ezra Creator Tools icon">
+    <div>
+      <div class="name">Ezra Creator Tools</div>
+      <div class="tag">A creator's own publishing toolkit</div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <h1>Publish your own videos to your own TikTok account — through the official API.</h1>
+    <p>Ezra Creator Tools is a personal software tool built and operated by independent creator
+    <strong>Guangyi Zhao</strong>. It connects the creator's own computer to his own TikTok account
+    using TikTok's official Content Posting API, so finished videos can be uploaded and published
+    without repetitive manual steps in the app. It works only for the account owner's own account
+    and the owner's own original content.</p>
+  </div>
+
+  <section>
+    <h2>What it does</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Direct video publishing</h3>
+        <p>Uploads finished video files from the creator's library and publishes them to his own
+        TikTok profile via the official Content Posting API — no scraping, no unofficial clients.</p>
+      </div>
+      <div class="card">
+        <h3>Publishing status checks</h3>
+        <p>Polls the API for the processing and publishing status of each upload, so the creator
+        can confirm that a video went live and keep an accurate publishing log.</p>
+      </div>
+      <div class="card">
+        <h3>A steady daily workflow</h3>
+        <p>Supports a daily publishing routine across the creator's series — short technology
+        explainers, music videos of original hymns, and educational clips — with captions and
+        AI-generated-content labels prepared in advance.</p>
+      </div>
+      <div class="card">
+        <h3>Owner-only by design</h3>
+        <p>The tool is authorized once, by the account owner, through TikTok's standard OAuth flow.
+        It stores only the owner's own access tokens, on the owner's own computer, and has no
+        access to anyone else's account or data.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li><strong>Authorize once.</strong> The account owner signs in on TikTok's own
+      authorization page and grants the tool permission to post to his account.</li>
+      <li><strong>Prepare content locally.</strong> Videos are written, recorded, and edited by
+      the creator on his own computer — original scripts, original music, and AI-generated
+      visuals and narration produced by the creator.</li>
+      <li><strong>Publish through the API.</strong> The tool uploads the finished file to the
+      owner's account and publishes it with its caption, disclosing AI-generated content where
+      the platform requires it.</li>
+      <li><strong>Verify and log.</strong> The tool checks the publishing status, and the result
+      is recorded in the creator's publishing ledger. Access can be revoked at any time in
+      TikTok's settings.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Who it is for</h2>
+    <p>Ezra Creator Tools is a single-user tool. It is built for its operator, Guangyi Zhao — a
+    San Jose, California based creator who publishes original technology, music, and educational
+    videos under his own name. It is not a public service, is not offered to other users, and does
+    not manage, post to, or read any third-party account.</p>
+  </section>
+
+  <section>
+    <h2>Content published with this tool</h2>
+    <ul class="plain">
+      <li>Original worship music and hymn videos composed by the creator.</li>
+      <li>Short explainers about the creator's own open-source software projects.</li>
+      <li>Bible-story animation and other educational series written and produced by the creator.</li>
+    </ul>
+    <p>All content is the owner's own original work and follows TikTok's Terms of Service and
+    Community Guidelines.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Questions about this tool or the content published with it:<br>
+    Guangyi Zhao — <a href="mailto:ezra777.zhao@gmail.com">ezra777.zhao@gmail.com</a></p>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap foot">
+    <nav>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="mailto:ezra777.zhao@gmail.com">Contact</a>
+    </nav>
+    <p>© 2026 Guangyi Zhao. Ezra Creator Tools is a personal tool of its owner and is not
+    affiliated with TikTok or ByteDance.</p>
+  </div>
+</footer>
 </body>
 </html>
